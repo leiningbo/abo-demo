@@ -32,6 +32,7 @@
         <mybatis-springboot>2.1.4</mybatis-springboot>
         <guava.version>22.0</guava.version>
         <swagger.version>2.5.0</swagger.version>
+        <fastjon.version>1.2.47</fastjon.version>
     </properties>
 
     <dependencies>
@@ -74,7 +75,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>${fastjon.version}</version>
         </dependency>
 
         <dependency>
