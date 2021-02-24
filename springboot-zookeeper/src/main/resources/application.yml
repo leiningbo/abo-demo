@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: zookeeper
+
+curator:
+  #重试次数
+  retryCount: 3
+  #重试间隔时间
+  elapedTimeMs: 5000
+  # zookeeper地址
+  url: 139.196.32.68:2181
+  # session超时时间
+  sessionTimeout: 60000
+  # 连接超时时间
+  connectionTimeout: 5000
+
+
+
+
+
