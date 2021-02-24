@@ -1,4 +1,4 @@
-package com.abo.study.springbootredisson.utils;
+package com.abo.study.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.DataType;

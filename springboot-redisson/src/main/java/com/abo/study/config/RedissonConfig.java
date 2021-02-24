@@ -1,4 +1,4 @@
-package com.abo.study.springbootredisson.config;
+package com.abo.study.config;
 
 import org.redisson.Redisson;
 import org.redisson.config.Config;
