@@ -23,6 +23,7 @@
         <module>springboot-websocket</module>
         <module>springboot-redisson</module>
         <module>springboot-zookeeper</module>
+        <module>springboot-mybatisplus</module>
     </modules>
 
     <properties>
