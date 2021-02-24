@@ -21,6 +21,7 @@
     <modules>
         <module>springboot-common</module>
         <module>springboot-websocket</module>
+        <module>springboot-redisson</module>
     </modules>
 
     <properties>
