@@ -22,7 +22,7 @@
         <module>springboot-common</module>
         <module>springboot-websocket</module>
         <module>springboot-redisson</module>
-        <module>springboot-zookeeper</module>
+<!--        <module>springboot-zookeeper</module>-->
     </modules>
 
     <properties>
@@ -30,6 +30,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <mybatis-springboot>2.1.4</mybatis-springboot>
+        <guava.version>22.0</guava.version>
+        <swagger.version>2.5.0</swagger.version>
     </properties>
 
     <dependencies>
@@ -67,6 +69,31 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <!--swagger 测试工具-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
 
