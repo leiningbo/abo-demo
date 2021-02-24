@@ -10,10 +10,7 @@
     </parent>
 
     <artifactId>springboot-common</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>springboot-common</name>
-    <description>公共类</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
