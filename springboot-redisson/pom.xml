@@ -14,6 +14,10 @@
     <name>springboot-redisson</name>
     <description>Demo project for Spring Boot</description>
 
+    <modules>
+        <module>../springboot-common</module>
+    </modules>
+
     <properties>
         <springboot-redisson.version>3.9.1</springboot-redisson.version>
     </properties>

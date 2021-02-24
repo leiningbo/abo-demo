@@ -1,4 +1,4 @@
-package com.abo.study.demo.entity;
+package com.abo.study.entity;
 
 import lombok.Data;
 
