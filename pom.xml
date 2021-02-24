@@ -22,7 +22,7 @@
         <module>springboot-common</module>
         <module>springboot-websocket</module>
         <module>springboot-redisson</module>
-        <module>demo</module>
+        <module>springboot-zookeeper</module>
     </modules>
 
     <properties>
