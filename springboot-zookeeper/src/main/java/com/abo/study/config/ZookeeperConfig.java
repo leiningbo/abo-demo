@@ -1,10 +1,8 @@
 package com.abo.study.config;
 
-import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.apache.curator.retry.RetryNTimes;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,8 +18,8 @@ public class ZookeeperConfig {
     @Value("${curator.retryCount}")
     private int retryCount;
 
-    @Value("${curator.elapedTimeMs}")
-    private int elapedTimeMs;
+    @Value("${curator.elapsedTimeMs}")
+    private int elapsedTimeMs;
 
     @Value("${curator.url}")
     private String url;
@@ -38,7 +36,7 @@ public class ZookeeperConfig {
                 .connectString(url)
                 .sessionTimeoutMs(sessionTimeout)
                 .connectionTimeoutMs(connectionTimeout)
-                .retryPolicy(new ExponentialBackoffRetry(retryCount, elapedTimeMs)).build();
+                .retryPolicy(new ExponentialBackoffRetry(retryCount, elapsedTimeMs)).build();
     }
 
 
