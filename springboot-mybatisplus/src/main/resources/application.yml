@@ -17,14 +17,16 @@ spring:
       auto-commit: true
 
 
+
 mybatis-plus:
   configuration:
-    # console SQL日志
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
-  mapper-locations: classpath:com.abo.study.mapper/*Mapper.xml
+  mapper-locations: classpath:com.abo.study.mapper/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.abo.study.entity
-
 
