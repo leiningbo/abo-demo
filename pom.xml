@@ -24,6 +24,7 @@
         <module>springboot-redisson</module>
         <module>springboot-zookeeper</module>
         <module>springboot-mybatisplus</module>
+        <module>springboot-rocketmq</module>
     </modules>
 
     <properties>
@@ -35,6 +36,7 @@
         <swagger.version>2.5.0</swagger.version>
         <fastjon.version>1.2.47</fastjon.version>
         <springboot-redisson.version>3.9.1</springboot-redisson.version>
+        <springboot-rocketMQ.version>2.0.1</springboot-rocketMQ.version>
     </properties>
 
     <dependencies>
