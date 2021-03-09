@@ -36,7 +36,7 @@ public class ZookeeperConfig {
                 .connectString(url)
                 .sessionTimeoutMs(sessionTimeout)
                 .connectionTimeoutMs(connectionTimeout)
-                .retryPolicy(new ExponentialBackoffRetry(retryCount, elapsedTimeMs)).build();
+                .retryPolicy(new ExponentialBackoffRetry(elapsedTimeMs,retryCount )).build();
     }
 
 
