@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * 有点拉阔
+ * 有点拉垮
  * @author lnb
  * @date 2021/3/2 11:08
  * @description
