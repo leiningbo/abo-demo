@@ -1,9 +1,10 @@
 package com.abo.study;
 
 
-
-import com.abo.study.mapper.TradeUserMapper;
+import com.abo.study.entity.DeepCloneEntity;
+import com.abo.study.entity.DemoEntity;
 import com.abo.study.entity.TradeUser;
+import com.abo.study.mapper.TradeUserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,5 +27,15 @@ public class SpringbootMybatisplusApplicationTests {
             System.out.println(tradeUser);
         }
     }
+
+
+    @Test
+    public void test1() throws CloneNotSupportedException {
+        DemoEntity demoEntity = new DemoEntity();
+        DeepCloneEntity entity = new DeepCloneEntity();
+        DeepCloneEntity clone = (DeepCloneEntity) entity.clone();
+
+    }
+
 
 }

@@ -1,19 +1,32 @@
 package com.abo.study;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith( SpringRunner.class )
+
 @SpringBootTest
 public class SpringbootRedissonApplicationTests {
 
     @Test
     public void test() {
-        int a = 1;
-        int b = 2;
-        System.out.println(a + b);
+        Integer a = Integer.valueOf(130);
+        Integer b = 130;
+
+        System.out.println(a == b);
+
+        int a1 = 130;
+        Integer b1 = 130;
+        System.out.println(a1 == b1);
+
+        Integer a2 = 130;
+        Integer b2 = 130;
+        System.out.println(a2 == b2);
+
+        Integer a3 = Integer.valueOf(130);
+        Integer b3 = Integer.valueOf(130);
+        System.out.println(a3 == b3);
+
+
     }
 
 }
