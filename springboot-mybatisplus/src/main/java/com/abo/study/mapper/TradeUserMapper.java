@@ -5,10 +5,12 @@ import com.abo.study.entity.TradeUser;
 import com.abo.study.entity.TradeUserExample;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface TradeUserMapper {
     int countByExample(TradeUserExample example);
 

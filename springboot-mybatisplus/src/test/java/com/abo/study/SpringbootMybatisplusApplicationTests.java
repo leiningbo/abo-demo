@@ -4,7 +4,7 @@ package com.abo.study;
 import com.abo.study.entity.DeepCloneEntity;
 import com.abo.study.entity.DemoEntity;
 import com.abo.study.entity.TradeUser;
-import com.abo.study.mapper.TradeUserMapper;
+import com.abo.study.service.TradeUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,11 +18,11 @@ import java.util.List;
 public class SpringbootMybatisplusApplicationTests {
 
     @Resource
-    private TradeUserMapper userMapper;
+    private TradeUserService tradeUserService;
 
     @Test
     public void test() {
-        List<TradeUser> tradeUsers = userMapper.list();
+        List<TradeUser> tradeUsers = tradeUserService.list();
         for (TradeUser tradeUser : tradeUsers) {
             System.out.println(tradeUser);
         }
@@ -34,6 +34,7 @@ public class SpringbootMybatisplusApplicationTests {
         DemoEntity demoEntity = new DemoEntity();
         DeepCloneEntity entity = new DeepCloneEntity();
         DeepCloneEntity clone = (DeepCloneEntity) entity.clone();
+
 
     }
 
