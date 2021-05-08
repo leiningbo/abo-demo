@@ -1,6 +1,7 @@
 package com.abo.study.controller;
 
 import com.abo.study.utils.RedisUtils;
+import io.swagger.annotations.Api;
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @RequestMapping("/redis")
+@Api
 public class DistributedRedisLockController {
 
     private static final String STOCK_KEY = "stock";
@@ -46,7 +48,7 @@ public class DistributedRedisLockController {
             if (stock > 0) {
                 int reduceStock = stock - 1;
                 redisUtils.setEx(STOCK_KEY, reduceStock + "", 1, TimeUnit.HOURS);
-                System.out.println("减库成功，剩余库存：" + stock);
+                System.out.println("减库成功，剩余库存：" + reduceStock);
             } else {
                 System.out.println("减库失败，库存不足");
             }
