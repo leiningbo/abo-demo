@@ -25,7 +25,7 @@
         <module>springboot-zookeeper</module>
         <module>springboot-mybatisplus</module>
 <!--        <module>springboot-rocketmq</module>-->
-<!--        <module>Mybatis-Reverse</module>-->
+        <module>Mybatis-Reverse</module>
     </modules>
 
     <properties>
@@ -39,7 +39,7 @@
         <springboot-redisson.version>3.9.1</springboot-redisson.version>
         <springboot-rocketMQ.version>2.0.1</springboot-rocketMQ.version>
         <mybatis-plus.version>3.0.5</mybatis-plus.version>
-        <easyExcel.version>2.1.6</easyExcel.version>
+
     </properties>
 
     <dependencies>
@@ -109,11 +109,7 @@
             <version>${swagger.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>easyexcel</artifactId>
-            <version>${easyExcel.version}</version>
-        </dependency>
+
 
 
     </dependencies>
