@@ -1,7 +1,6 @@
 package com.abo.study.controller;
 
 import com.abo.study.entity.TradeUser;
-import com.abo.study.response.Result;
 import com.abo.study.service.TradeUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +22,8 @@ public class TradeUserController {
     private TradeUserService tradeUserService;
 
     @RequestMapping( value = "/list", method = RequestMethod.GET )
-    public Result list() {
-        List<TradeUser> list = tradeUserService.list();
-        return Result.suc(list);
+    public List<TradeUser> list() {
+        return tradeUserService.list();
     }
 
 
